@@ -1,0 +1,64 @@
+body{
+  background: black;
+  margin: 0;
+}
+
+.content{
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  background: url('assets/background/stars.png'), url('assets/background/bg.png') 50% 20% repeat-y fixed;
+  background-size: 100%;
+  font-family: monospace;
+  font-weight: lighter;
+}
+
+.head{
+  width: 100%;
+  height: 665px;
+  background: url('assets/svg/circle.svg') no-repeat 50% 100.5%;
+  background-size: auto 265%;
+}
+
+.Star_Wars{
+  width: 100%;
+  height: 110px;
+  text-align: center;
+  padding-top: 115px;
+}
+
+.character{
+  width: 100%;
+  /*height: 220px;*/
+  margin-top: 65px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.name{
+  margin: 5px;
+  color: white;
+  font-size: 26pt;
+  text-align: center;
+}
+
+.position{
+  margin: 0;
+  color: #7e7e7e;
+  font-size: 15pt;
+  text-align: center;
+}
+
+
+
+#Star_Wars{
+  width: 110px;
+  height: 110px;
+}
+
+#character{
+  width: 215px;
+  height: 215px;
+  border-radius: 150px;
+  border: solid white;
+}
