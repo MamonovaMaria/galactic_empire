@@ -1,6 +1,16 @@
 $(document).ready(function(){
   toHome();
+
+
+
+
   function toHome(){
+    $(".character").attr('id', undefined);
+    $(".character").html(
+      "<img class=\"main_avatar\" src=\"assets/avatars/empire.png\" alt=\"Star Wars\">\
+      <p class=\"name header\"> Galactic Empire </p>\
+      <p class=\"position header\"> Imperial military </p>"
+    );
     $("#for_back").hide();
     determinationOfInferiors(undefined);
   }
