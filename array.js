@@ -1,4 +1,4 @@
-[
+objects = [
 {
   id: 1,
   name: "Darth Vader",

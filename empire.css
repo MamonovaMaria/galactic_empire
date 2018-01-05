@@ -1,12 +1,17 @@
 body{
-  background: black;
+  background: #26282b;
   margin: 0;
 }
 
 .content{
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   max-width: 1400px;
-  height: 100%;
+  min-height: 100%;
   margin: 0 auto;
+  padding-bottom: 130px;
   background: url('assets/background/stars.png'), url('assets/background/bg.png') 50% 20% repeat-y fixed;
   background-size: 100%;
   font-family: monospace;
@@ -28,37 +33,61 @@ body{
 }
 
 .character{
-  width: 100%;
-  /*height: 220px;*/
-  margin-top: 65px;
+  margin: 65px auto 20px;
   text-align: center;
-  overflow: hidden;
 }
 
+.inferiors{
+  margin: 120px 100px 120px;
+  text-align: center;
+}
+
+.inferior{
+  width: 500px;
+  float: right;
+  text-align: center;
+}
+
+.header{
+  text-align: center;
+}
 .name{
   margin: 5px;
   color: white;
   font-size: 26pt;
-  text-align: center;
 }
 
 .position{
   margin: 0;
   color: #7e7e7e;
   font-size: 15pt;
-  text-align: center;
 }
 
+.main_avatar{
+  width: 220px;
+  height: 220px;
+  border-radius: 150px;
+  border: solid white;
+}
+.avatar{
+  width: 110px;
+  height: 110px;
+  float:left;
+  border-radius: 150px;
+  border: solid white;
+}
 
+#for_back{
+  position: absolute;
+  margin: 0 0;
+  width: 60px;
+  padding: 163 0 0 230;
+  float: left;
+  color: #7e7e7e;
+  font-size: 15pt;
+}
 
 #Star_Wars{
   width: 110px;
   height: 110px;
-}
-
-#character{
-  width: 215px;
-  height: 215px;
-  border-radius: 150px;
-  border: solid white;
 }
