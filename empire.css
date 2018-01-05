@@ -38,21 +38,29 @@ body{
 }
 
 .inferiors{
-  margin: 120px 100px 120px;
+  margin: 60px 140px 120px;
   text-align: center;
 }
 
 .inferior{
-  width: 500px;
-  float: right;
+  width: 420px;
+  float: left;
   text-align: center;
+  padding: 70px 50px;
 }
 
 .header{
   text-align: center;
 }
+
+.descript{
+  float: left;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
 .name{
-  margin: 5px;
+  margin: 5px 0;
   color: white;
   font-size: 26pt;
 }
@@ -77,6 +85,12 @@ body{
   border: solid white;
 }
 
+.btn{
+  width: 65px;
+  height: 65px;
+  margin-top: 510px;
+}
+
 #for_back{
   position: absolute;
   margin: 0 0;
@@ -90,4 +104,21 @@ body{
 #Star_Wars{
   width: 110px;
   height: 110px;
+}
+
+#to_left{
+  float: left;
+  position:absolute;
+  top: 0;
+  left: 0;
+  margin-left: 220px;
+}
+
+#to_right{
+  transform: scale(-1, 1);
+  float: right;
+  position:absolute;
+  top: 0;
+  right: 0;
+  margin-right: 220px;
 }
