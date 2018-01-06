@@ -1,142 +1,447 @@
-body{
-  background: #171717;
-  margin: 0;
+@media (min-width: 770px){
+  body{
+    background: #171717;
+  }
+  .content{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1400px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding-bottom: 130px;
+    background: url('assets/background/stars.png'), url('assets/background/bg.png') 50% 20% repeat-y fixed;
+    background-size: 100%;
+    font-family: 'Open Sans', arial;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
+
+  .head{
+    width: 100%;
+    height: 650px;
+    background: url('assets/svg/circle.svg') no-repeat 50% 100.5%;
+    background-size: auto 265%;
+  }
+  .Star_Wars{
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    padding-top: 100px;
+    cursor: pointer;
+  }
+  .btn{
+    position:absolute;
+    top: 0;
+    width: 65px;
+    height: 65px;
+    margin-top: 490px;
+    cursor: pointer;
+  }
+  .character{
+    margin: 65px auto 20px;
+    text-align: center;
+  }
+
+  .inferiors{
+    margin: 25px 140px 120px;
+    text-align: center;
+  }
+  .inferior{
+    width: 420px;
+    float: left;
+    text-align: center;
+    padding: 70px 50px 10px;
+  }
+  .inferiors_count{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-size: 13pt;
+  }
+
+  .name_header, .name{
+    margin: 5px 0;
+    color: white;
+    /* font-size: 31pt; */
+    font-size: 24pt;
+    cursor: default;
+  }
+  .name_header{text-align: center;}
+  .name{
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .position_header, .position{
+    margin: 0;
+    color:  #808080;
+    /* font-size: 18pt; */
+    font-size: 14pt;
+    cursor: default;
+  }
+  .position_header{text-align: center;}
+  .position{text-align: left;}
+
+  .descript{
+    float: left;
+    padding-left: 30px;
+    padding-top: 5px;
+  }
+
+  .main_avatar{
+    width: 220px;
+    height: 220px;
+    border-radius: 150px;
+    border: solid white;
+  }
+  .avatar, .avatar_hover{
+    width: 110px;
+    height: 110px;
+    float:left;
+    border-radius: 150px;
+    border: solid white;
+    cursor: pointer;
+  }
+  .avatar_hover{
+    position: absolute;
+  }
+
+  #for_back{
+    position: absolute;
+    margin: 0 0;
+    width: 60px;
+    padding: 163 0 0 230;
+    float: left;
+    color: #7e7e7e;
+    font-size: 15pt;
+    cursor: pointer;
+  }
+  #Star_Wars{
+    width: 110px;
+    height: 110px;
+  }
+  #to_left{
+    float: left;
+    left: 0;
+    margin-left: 220px;
+  }
+  #to_right{
+    transform: scale(-1, 1);
+    float: right;
+    right: 0;
+    margin-right: 220px;
+  }
+
+  .inferior:hover .avatar{
+    filter: brightness(50%);
+  }
+  .inferior:hover .name{
+    color: red;
+  }
+  .inferior:hover .position{
+    color: white;
+  }
+  .btn:hover {
+    filter: brightness(60%);
+  }
+
+  #for_back:hover{
+    color: white;
+  }
 }
 
-.content{
-  position:absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  max-width: 1400px;
-  min-height: 100%;
-  margin: 0 auto;
-  padding-bottom: 130px;
-  background: url('assets/background/stars.png'), url('assets/background/bg.png') 50% 20% repeat-y fixed;
-  background-size: 100%;
-  font-family: monospace;
-  font-weight: lighter;
+@media (min-width: 330px) and (max-width: 769px){
+  body{
+    background: #171717;
+  }
+  .content{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1400px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding-bottom: 130px;
+    background: url('assets/background/stars.png'), url('assets/background/bg.png') 50% 10% repeat-y fixed;
+    background-size: 100px cover;
+    font-family: 'Open Sans', arial;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
+
+  .head{
+    width: 100%;
+    height: 580px;
+    background: url('assets/svg/circle.svg') no-repeat 50% 100.5%;
+    background-size: auto 265%;
+  }
+  .Star_Wars{
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    padding-top: 25px;
+    cursor: pointer;
+  }
+  .btn{ visibility: hidden;}
+  .character{
+    margin: 65px auto 20px;
+    text-align: center;
+  }
+
+  .inferiors{
+    margin: 30px 140px 120px;
+    text-align: center;
+  }
+  .inferior{
+    width: 420px;
+    float: left;
+    text-align: center;
+    padding: 40px 50px 10px;
+  }
+  .inferiors_count{
+    margin: -10px 0 0 -10px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-size: 13pt;
+  }
+
+  .name_header, .name{
+    margin: 5px 0;
+    color: white;
+    cursor: default;
+    letter-spacing: 3px;
+  }
+  .name_header{
+    padding-top: 15px;
+    text-align: center;
+    /* font-size: 31pt; */
+    font-size: 24pt;
+  }
+  .name{
+    text-align: left;
+    cursor: pointer;
+    /* font-size: 25pt; */
+    font-size: 20pt;
+  }
+
+  .position_header, .position{
+    margin: 0;
+    color:  #808080;
+    cursor: default;
+  }
+  .position_header{
+    text-align: center;
+    /* font-size: 18pt; */
+    font-size: 14pt;
+  }
+  .position{
+    text-align: left;
+    /* font-size: 15pt; */
+    font-size: 11pt;
+  }
+
+  .descript{
+    float: left;
+    padding-left: 30px;
+    padding-top: 5px;
+  }
+
+  .main_avatar{
+    width: 220px;
+    height: 220px;
+    border-radius: 150px;
+    border: solid white;
+  }
+  .avatar, .avatar_hover{
+    width: 85px;
+    height: 85px;
+    float:left;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  .avatar_hover{
+    position: absolute;
+  }
+
+  #for_back{
+    position: absolute;
+    margin: 0 0;
+    width: 60px;
+    padding: 50 0 0 70;
+    float: left;
+    color: #808080;
+    font-size: 15pt;
+    cursor: pointer;
+  }
+  #Star_Wars{
+    width: 110px;
+    height: 110px;
+  }
+  #to_left{
+    float: left;
+    left: 0;
+    margin-left: 220px;
+  }
+  #to_right{
+    transform: scale(-1, 1);
+    float: right;
+    right: 0;
+    margin-right: 220px;
+  }
+
+  .inferior:hover .avatar{
+    filter: brightness(50%);
+  }
+  .inferior:hover .name{
+    color: red;
+  }
+  .inferior:hover .position{
+    color: white;
+  }
+  .btn:hover {
+    filter: brightness(60%);
+  }
+
+  #for_back:hover{
+    color: white;
+  }
 }
 
-.head{
-  width: 100%;
-  height: 665px;
-  background: url('assets/svg/circle.svg') no-repeat 50% 100.5%;
-  background-size: auto 265%;
-}
+@media (max-width: 329px){
+  body{
+    min-height: 100%;
+    background: black;
+    padding-bottom: 170px;
+  }
 
-.Star_Wars{
-  width: 100%;
-  height: 110px;
-  text-align: center;
-  padding-top: 115px;
-  cursor: pointer;
-}
+  .head{
+    width: 100%;
+    height: 630px;
+    background: url('assets/svg/circle.svg') no-repeat 50% 100.5%;
+    background-size: auto 265%;
+  }
+  .Star_Wars{
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    padding-top: 30px;
+    cursor: pointer;
+  }
+  .btn{ visibility: hidden;}
 
-.character{
-  margin: 65px auto 20px;
-  text-align: center;
-}
+  .character{
+    margin: 65px auto 20px;
+    text-align: center;
+  }
+  .inferiors{
+    margin: 45px 0;
+    text-align: center;
+  }
+  .inferior{
+    width: 420px;
+    float: left;
+    text-align: center;
+    padding: 0 50px 60px;
+  }
+  .inferiors_count{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-size: 13pt;
+  }
+  .descript{
+    float: left;
+    padding-left: 30px;
+    padding-top: 15px;
+  }
 
-.inferiors{
-  margin: 25px 140px 120px;
-  text-align: center;
-}
+  .name_header{
+    margin: 15px 0;
+    color: white;
+    font-size: 38pt;
+    cursor: default;
+    text-align: center;
+  }
+  .name{
+    margin: 5px 0;
+    color: white;
+    font-size: 26pt;
+    cursor: default;
+    text-align: left;
+  }
 
-.inferior{
-  width: 420px;
-  float: left;
-  text-align: center;
-  padding: 70px 50px 10px;
-}
+  .position_header{
+    margin: -10px 0;
+    color: #7e7e7e;
+    font-size: 25pt;
+    cursor: default;
+    text-align: center;
+  }
+  .position{
+    margin: 0;
+    color: #7e7e7e;
+    font-size: 17pt;
+    cursor: default;
+    text-align: left;
+  }
 
-.header{
-  text-align: center;
-}
+  .main_avatar{
+    width: 220px;
+    height: 220px;
+    border-radius: 150px;
+    border: solid white;
+  }
+  .avatar{
+    width: 110px;
+    height: 110px;
+    float:left;
+    border-radius: 150px;
+    border: solid white;
+    cursor: pointer;
+  }
 
-.descript{
-  float: left;
-  padding-left: 30px;
-  padding-top: 15px;
-}
+  #for_back{
+    position: absolute;
+    margin: 0 0;
+    width: 60px;
+    padding: 70px 0 0 50px;
+    float: left;
+    color: white;
+    font-size: 22pt;
+    cursor: pointer;
+  }
+  #Star_Wars{
+    width: 110px;
+    height: 110px;
+  }
 
-.name{
-  margin: 5px 0;
-  color: white;
-  font-size: 26pt;
-  cursor: default;
-}
-
-.position{
-  margin: 0;
-  color: #7e7e7e;
-  font-size: 15pt;
-  cursor: default;
-}
-
-.main_avatar{
-  width: 220px;
-  height: 220px;
-  border-radius: 150px;
-  border: solid white;
-}
-.avatar{
-  width: 110px;
-  height: 110px;
-  float:left;
-  border-radius: 150px;
-  border: solid white;
-  cursor: pointer;
-}
-
-.btn{
-  width: 65px;
-  height: 65px;
-  margin-top: 510px;
-  cursor: pointer;
-}
-
-.inferiors_count{
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  border-radius: 50px;
-  background-color: red;
-  color: white;
-  font-size: 13pt;
-}
-
-#for_back{
-  position: absolute;
-  margin: 0 0;
-  width: 60px;
-  padding: 163 0 0 230;
-  float: left;
-  color: #7e7e7e;
-  font-size: 15pt;
-  cursor: pointer;
-}
-
-#Star_Wars{
-  width: 110px;
-  height: 110px;
-}
-
-#to_left{
-  float: left;
-  position:absolute;
-  top: 0;
-  left: 0;
-  margin-left: 220px;
-}
-
-#to_right{
-  transform: scale(-1, 1);
-  float: right;
-  position:absolute;
-  top: 0;
-  right: 0;
-  margin-right: 220px;
+  .inferior:hover .avatar{
+    filter: brightness(50%);
+  }
+  .inferior:hover .name{
+    color: red;
+  }
+  .inferior:hover .position{
+    color: white;
+  }
 }

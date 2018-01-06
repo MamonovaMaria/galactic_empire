@@ -47,14 +47,13 @@ $(".inferiors").on('click', ".inferior", function(){
   renderingOfTheCharacter(retrieved[0]);
 });
 
-
 //функции
 function toHome(){
   $(".character").attr('id', "undefined");
   $(".character").html(
     "<img class=\"main_avatar\" src=\"assets/avatars/empire.png\" alt=\"Star Wars\">\
-    <p class=\"name header\"> Galactic Empire </p>\
-    <p class=\"position header\"> Imperial military </p>"
+    <p class=\"name_header\"> Galactic Empire </p>\
+    <p class=\"position_header\"> Imperial military </p>"
   );
   $("#for_back").hide();
   $("#to_left").hide();
@@ -69,8 +68,8 @@ function renderingOfTheCharacter(new_character){
   $(".character").html("");
   $(".character").html(
     "<img class=\"main_avatar\" src=\"assets/avatars/" + new_character.image + "\">\
-    <p class=\"name header\">" + new_character.name + "</p>\
-    <p class=\"position header\">" + new_character.post + "</p>"
+    <p class=\"name_header\">" + new_character.name + "</p>\
+    <p class=\"position_header\">" + new_character.post + "</p>"
   );
 
   determinationOfInferiors(new_character.id);
@@ -89,6 +88,7 @@ function determinationOfInferiors(character_id){
 
       $("#" + this.id).html(
         "<img class=\"avatar\" src=\"assets/avatars/" + this.image + "\">\
+        <div class=\"avatar_hover\"></div>\
         <div class=\"descript\">\
         <p class=\"name\">" + this.name + "</p>\
         <p class=\"position\">" + this.post + "</p>\
@@ -115,10 +115,6 @@ function searchColleagues(character){
     if (this.parent == character.parent)
       colleagues.push(this);
   });
-}
-
-function searchInferiors(){
-
 }
 
 function getIndex(){
