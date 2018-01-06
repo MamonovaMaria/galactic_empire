@@ -1,6 +1,6 @@
-@media (min-width: 770px){
+@media (min-width: 1025px){
   body{
-    background: #171717;
+    background: black;
   }
   .content{
     position:absolute;
@@ -45,14 +45,14 @@
   }
 
   .inferiors{
-    margin: 25px 140px 120px;
+    margin: 25px 0 120px 240px;
     text-align: center;
   }
   .inferior{
-    width: 420px;
+    width: 50%;
     float: left;
     text-align: center;
-    padding: 70px 50px 10px;
+    padding: 70px 0 10px;
   }
   .inferiors_count{
     position: absolute;
@@ -72,8 +72,12 @@
     /* font-size: 31pt; */
     font-size: 24pt;
     cursor: default;
+    letter-spacing: 4px;
   }
-  .name_header{text-align: center;}
+  .name_header{
+    text-align: center;
+    padding-top: 10px;
+  }
   .name{
     text-align: left;
     cursor: pointer;
@@ -106,7 +110,7 @@
     height: 110px;
     float:left;
     border-radius: 150px;
-    border: solid white;
+    border: 2px solid white;
     cursor: pointer;
   }
   .avatar_hover{
@@ -157,18 +161,18 @@
   }
 }
 
-@media (min-width: 330px) and (max-width: 769px){
+@media only screen and (min-width: 426px) and (max-width: 1024px){
   body{
-    background: #171717;
+    max-width: 1024px;
   }
   .content{
     position:absolute;
     top: 0;
     left: 0;
     right: 0;
-    max-width: 1400px;
+    max-width: 1024px;
     min-height: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding-bottom: 130px;
     background: url('assets/background/stars.png'), url('assets/background/bg.png') 50% 10% repeat-y fixed;
     background-size: 100px cover;
@@ -179,7 +183,7 @@
 
   .head{
     width: 100%;
-    height: 580px;
+    height: 570px;
     background: url('assets/svg/circle.svg') no-repeat 50% 100.5%;
     background-size: auto 265%;
   }
@@ -197,14 +201,14 @@
   }
 
   .inferiors{
-    margin: 30px 140px 120px;
+    margin: 40px 140px 120px;
     text-align: center;
   }
   .inferior{
     width: 420px;
     float: left;
     text-align: center;
-    padding: 40px 50px 10px;
+    padding: 40px 50px 7px;
   }
   .inferiors_count{
     margin: -10px 0 0 -10px;
@@ -223,19 +227,19 @@
     margin: 5px 0;
     color: white;
     cursor: default;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
   }
   .name_header{
     padding-top: 15px;
     text-align: center;
     /* font-size: 31pt; */
-    font-size: 24pt;
+    font-size: 23pt;
   }
   .name{
     text-align: left;
     cursor: pointer;
     /* font-size: 25pt; */
-    font-size: 20pt;
+    font-size: 18pt;
   }
 
   .position_header, .position{
@@ -246,7 +250,7 @@
   .position_header{
     text-align: center;
     /* font-size: 18pt; */
-    font-size: 14pt;
+    font-size: 13pt;
   }
   .position{
     text-align: left;
@@ -322,101 +326,109 @@
   }
 }
 
-@media (max-width: 329px){
+@media only screen and (max-width: 425px){
   body{
-    min-height: 100%;
+    max-width: 425px;
     background: black;
     padding-bottom: 170px;
+    font-family: 'Open Sans', arial;
+    font-weight: lighter;
+    letter-spacing: 2px;
   }
 
   .head{
     width: 100%;
-    height: 630px;
+    height: 370px;
     background: url('assets/svg/circle.svg') no-repeat 50% 100.5%;
     background-size: auto 265%;
   }
   .Star_Wars{
     width: 100%;
-    height: 110px;
+    height: 65px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 15px;
     cursor: pointer;
   }
   .btn{ visibility: hidden;}
 
   .character{
-    margin: 65px auto 20px;
+    margin: 35px auto 20px;
     text-align: center;
   }
   .inferiors{
-    margin: 45px 0;
+    margin: 25px 0;
     text-align: center;
   }
   .inferior{
-    width: 420px;
+    width: 330px;
     float: left;
     text-align: center;
-    padding: 0 50px 60px;
+    padding: 0 50px 40px;
   }
   .inferiors_count{
     position: absolute;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
     text-align: center;
     border-radius: 50px;
     background-color: red;
     color: white;
-    font-size: 13pt;
+    font-size: 11pt;
+    margin: -5px 0 0 -5px;
   }
   .descript{
     float: left;
-    padding-left: 30px;
-    padding-top: 15px;
+    padding-left: 25px;
+    padding-top: 5px;
   }
 
   .name_header{
     margin: 15px 0;
     color: white;
-    font-size: 25pt;
+    /* font-size: 25pt; */
+    font-size: 20pt;
     cursor: default;
     text-align: center;
   }
   .name{
     margin: 5px 0;
     color: white;
-    font-size: 18pt;
+    /* font-size: 18pt; */
+    font-size: 15pt;
     cursor: default;
     text-align: left;
   }
 
   .position_header{
-    margin: -10px 0;
+    margin: -12px 0;
     color: #808080;
-    font-size: 15pt;
+    /* font-size: 15pt; */
+    font-size: 11pt;
     cursor: default;
     text-align: center;
   }
   .position{
-    margin: 0;
+    margin: -5px 0;
     color: #7e7e7e;
-    font-size: 11pt;
+    /* font-size: 11pt; */
+    font-size: 9pt;
     cursor: default;
     text-align: left;
   }
 
   .main_avatar{
-    width: 220px;
-    height: 220px;
+    width: 125px;
+    height: 125px;
     border-radius: 150px;
-    border: solid white;
+    border: 2px solid white;
   }
   .avatar{
-    width: 110px;
-    height: 110px;
+    width: 60px;
+    height: 60px;
     float:left;
-    border-radius: 150px;
-    border: solid white;
+    border-radius: 50px;
+    border: 2px solid white;
     cursor: pointer;
   }
 
@@ -424,15 +436,15 @@
     position: absolute;
     margin: 0 0;
     width: 60px;
-    padding: 70px 0 0 50px;
+    padding: 40px 0 0 25px;
     float: left;
     color: white;
     font-size: 11pt;
     cursor: pointer;
   }
   #Star_Wars{
-    width: 110px;
-    height: 110px;
+    width: 65px;
+    height: 65px;
   }
 
   .inferior:hover .avatar{
