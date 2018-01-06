@@ -378,29 +378,29 @@
   .name_header{
     margin: 15px 0;
     color: white;
-    font-size: 38pt;
+    font-size: 25pt;
     cursor: default;
     text-align: center;
   }
   .name{
     margin: 5px 0;
     color: white;
-    font-size: 26pt;
+    font-size: 18pt;
     cursor: default;
     text-align: left;
   }
 
   .position_header{
     margin: -10px 0;
-    color: #7e7e7e;
-    font-size: 25pt;
+    color: #808080;
+    font-size: 15pt;
     cursor: default;
     text-align: center;
   }
   .position{
     margin: 0;
     color: #7e7e7e;
-    font-size: 17pt;
+    font-size: 11pt;
     cursor: default;
     text-align: left;
   }
@@ -427,7 +427,7 @@
     padding: 70px 0 0 50px;
     float: left;
     color: white;
-    font-size: 22pt;
+    font-size: 11pt;
     cursor: pointer;
   }
   #Star_Wars{
