@@ -98,7 +98,7 @@ objects = [
 },
 {
   id: 15,
-  name: "Darh Sidius",
+  name: "Darth Sidius",
   post: "Galactic Emperor",
   image: "darthsidius.png",
 },

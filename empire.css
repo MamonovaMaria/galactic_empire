@@ -1,5 +1,5 @@
 body{
-  background: #26282b;
+  background: #171717;
   margin: 0;
 }
 
@@ -30,6 +30,7 @@ body{
   height: 110px;
   text-align: center;
   padding-top: 115px;
+  cursor: pointer;
 }
 
 .character{
@@ -38,7 +39,7 @@ body{
 }
 
 .inferiors{
-  margin: 60px 140px 120px;
+  margin: 25px 140px 120px;
   text-align: center;
 }
 
@@ -46,7 +47,7 @@ body{
   width: 420px;
   float: left;
   text-align: center;
-  padding: 70px 50px;
+  padding: 70px 50px 10px;
 }
 
 .header{
@@ -63,12 +64,14 @@ body{
   margin: 5px 0;
   color: white;
   font-size: 26pt;
+  cursor: default;
 }
 
 .position{
   margin: 0;
   color: #7e7e7e;
   font-size: 15pt;
+  cursor: default;
 }
 
 .main_avatar{
@@ -83,12 +86,26 @@ body{
   float:left;
   border-radius: 150px;
   border: solid white;
+  cursor: pointer;
 }
 
 .btn{
   width: 65px;
   height: 65px;
   margin-top: 510px;
+  cursor: pointer;
+}
+
+.inferiors_count{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  font-size: 13pt;
 }
 
 #for_back{
@@ -99,6 +116,7 @@ body{
   float: left;
   color: #7e7e7e;
   font-size: 15pt;
+  cursor: pointer;
 }
 
 #Star_Wars{
