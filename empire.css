@@ -166,7 +166,7 @@
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 1024px){
+@media screen and (min-width: 426px) and (max-width: 1024px){
   body{
     max-width: 1024px;
   }
@@ -331,7 +331,7 @@
   }
 }
 
-@media only screen and (max-width: 425px){
+@media screen and (max-width: 425px){
   body{
     max-width: 425px;
     background: black;
@@ -340,6 +340,7 @@
     font-weight: lighter;
     letter-spacing: 2px;
   }
+  .content{ background: black; }
 
   .head{
     width: 100%;
