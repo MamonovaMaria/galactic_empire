@@ -26,7 +26,8 @@ body{
   background-size: auto 265%;
 }
 .Star_Wars{
-  width: 100%;
+  width: 110px;
+  margin: 0 auto;
   text-align: center;
   cursor: pointer;
 }
@@ -65,9 +66,7 @@ body{
   border: 2px solid white;
   cursor: pointer;
 }
-.avatar_hover{
-  position: absolute;
-}
+.avatar_hover{ position: absolute;}
 
 #for_back{
   position: absolute;
@@ -89,7 +88,7 @@ body{
   }
   .Star_Wars {
     height: 110px;
-    padding-top: 100px;
+    margin-top: 100px;
   }
   .btn{
     position:absolute;
@@ -138,7 +137,7 @@ body{
     height: 110px;
   }
   #for_back{
-    padding: 150 0 0 230;
+    margin: 150 0 0 230;
     color: #808080;
     font-size: 15pt;
   }
@@ -153,21 +152,11 @@ body{
     right: 0;
     margin-right: 220px;
   }
-  .inferior:hover .avatar{
-    filter: brightness(50%);
-  }
-  .inferior:hover .name{
-    color: red;
-  }
-  .inferior:hover .position{
-    color: white;
-  }
-  .btn:hover {
-    filter: brightness(60%);
-  }
-  #for_back:hover{
-    color: white;
-  }
+  .inferior:hover .avatar{filter: brightness(50%);}
+  .inferior:hover .name{color: red;}
+  .inferior:hover .position{color: white; }
+  .btn:hover {filter: brightness(60%);}
+  #for_back:hover{ color: white;}
 }
 
 @media screen and (min-width: 426px) and (max-width: 1024px){
@@ -179,7 +168,7 @@ body{
   }
   .Star_Wars {
     height: 110px;
-    padding-top: 25px;
+    margin-top: 25px;
   }
   .btn {visibility: hidden;}
   .character{margin: 65px auto 20px; }
@@ -221,11 +210,10 @@ body{
     height: 85px;
   }
   #for_back{
-    padding: 50 0 0 70;
+    margin: 50 0 0 70;
     color: white;
     font-size: 15pt;
   }
-
 }
 
 @media screen and (max-width: 425px){
@@ -234,14 +222,15 @@ body{
   .head{ height: 370px; }
   .Star_Wars{
     height: 65px;
-    padding-top: 15px;
+    margin-top: 15px;
   }
   .btn {visibility: hidden;}
   .character{ margin: 35px auto 20px; }
   .inferiors{ width: 90%; }
   .inferior{
     margin-top: 35px;
-    width: 100%;
+    margin-left: 5%;
+    width: 95%;
   }
   .inferiors_count{
     font-size: 11pt;
@@ -277,7 +266,7 @@ body{
   }
   .avatar_hover{ visibility: hidden; }
   #for_back{
-    padding: 40px 0 0 25px;
+    margin: 40px 0 0 25px;
     color: white;
     font-size: 11pt;
   }
@@ -285,5 +274,4 @@ body{
     width: 65px;
     height: 65px;
   }
-
 }

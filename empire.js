@@ -18,16 +18,39 @@ $("#for_back").click(function(){
 });
 
 $("#to_left").click(function(){
-  var index = getIndex();
-  if(index-1 >= 0)
-    renderingOfTheCharacter(colleagues[index-1]);
+  toLeft();
 });
 
 $("#to_right").click(function(){
-  var index = getIndex();
-  if(colleagues.length-index-2 >= 0)
-    renderingOfTheCharacter(colleagues[index+1]);
+  toRight();
 });
+
+
+$("body").touch = {};
+var contact;
+var deltaX;
+$("body").get(0).ontouchstart = function(e) {
+  contact = e.touches[0].clientX;
+};
+
+$("body").get(0).ontouchmove = function(e) {
+  if (e.touches.length == 1 && !$("body").is(":animated")) {
+    deltaX = contact - e.touches[0].clientX;
+    if (Math.abs(deltaX) > 10){
+      console.log(deltaX);
+      started = true;
+    }
+  }
+};
+
+$("body").get(0).ontouchend = function(e) {
+  if (deltaX > 10){
+    toRight();
+  }
+  else if (deltaX < -10){
+    toLeft();
+  }
+};
 
 $(".inferiors").on('click', ".inferior", function(){
   $("#for_back").show();
@@ -109,4 +132,16 @@ function getIndex(){
     return e.id == $(".character").attr('id');
   });
   return $.inArray(current_character[0], colleagues);
+}
+
+function toLeft(){
+  var index = getIndex();
+  if(index-1 >= 0)
+    renderingOfTheCharacter(colleagues[index-1]);
+}
+
+function toRight(){
+  var index = getIndex();
+  if(colleagues.length-index-2 >= 0)
+    renderingOfTheCharacter(colleagues[index+1]);
 }
